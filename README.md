@@ -1,2 +1,2 @@
-# uyanis
+# Ders Tekrarı
 C# Tekrar
