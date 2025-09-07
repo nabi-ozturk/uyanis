@@ -216,7 +216,7 @@ namespace uyanis
             */
 
             // Burç Hesaplama
-           
+
             /*
 
             Console.WriteLine("Lütfen hangi ay doğdunuzu giriniz: ");
@@ -258,7 +258,312 @@ namespace uyanis
             }
             */
 
+            // Çift Sayıları Bulan Program
+
+            /*
+            Console.WriteLine("Bulunacak çift sayıların aralığını belirleyiniz: ");
+            int baslangic = Convert.ToInt32(Console.ReadLine());
+            int bitis = Convert.ToInt32(Console.ReadLine());
+
+            if (baslangic > bitis)
+            {
+                int temp = baslangic;
+                baslangic = bitis;
+                bitis = temp;
+            }
+
+            for(int i = baslangic + 1; i < bitis; i++)
+            {
+                if(i % 2 == 0)
+                {
+                    Console.WriteLine("Sonuçlar: " + i);
+                }
+            }
+            */
+
+            // Tek Sayıların Toplamını Bulan Program
+
+            /*
+            Console.WriteLine("Toplanacak Tek Sayıların Aralığını Belirleyiniz: ");
+            int baslangic = Convert.ToInt32(Console.ReadLine());
+            int bitis = Convert.ToInt32(Console.ReadLine());
+
+            int toplam = 0;
+
+            if(baslangic > bitis)
+            {
+                int temp = baslangic;
+                baslangic = bitis;
+                bitis = temp;
+            }
+            for(int i = baslangic + 1; i < bitis; i++)
+            {
+                if(i % 2 == 1)
+                {
+                    toplam += i;
+                }
+            }
+            Console.WriteLine("Tek Sayıların Toplamı: " + toplam);
+
+            */
+
+            // Üslü Sayı Hesaplama
+
+            /*
+            Console.WriteLine("Lütfen taban değeri giriniz: ");
+            int taban = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Lütfen üs değeri giriniz: ");
+            int üs = Convert.ToInt32(Console.ReadLine());
+
+            int sonuc = 1;
+            for (int i = 0; i < üs; i++)
+            {
+                sonuc *= taban;
+            }
+            Console.WriteLine(sonuc);
+
+            */
+
+            // Faktöriyel Hesaplama
+
+            /*
+            Console.WriteLine("Faktöriyel Alınacak Sayı: ");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+
+            int sonuc = 1;
+
+            for(int i = 1; i <= sayi; i++)
+            {
+                sonuc *= i;
+            }
+
+            Console.WriteLine(sonuc);
+            */
+
+            // Harmonik Sayılar
+
+            /*
+            Console.WriteLine("Harmonik Sayının Sınırını Belirleyiniz: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            double toplam = 0;
+
+            for(int i = 1; i <= n; i++)
+            {
+                toplam += 1.0 / i;
+            }
+
+            Console.WriteLine(toplam);
+
+            */
+
+            // Kuvvet Hesaplama
+
+            /*
+            Console.WriteLine("Kaç adet kütle hesaplamak istiyorsunuz: ");
+            int adet = Convert.ToInt32(Console.ReadLine());
+
             
+
+            for(int i = 1; i <= adet; i++)
+            {
+                Console.WriteLine("Kütle: ");
+                int kütle = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("İvme: ");
+                int ivme = Convert.ToInt32(Console.ReadLine());
+
+                double kuvvet = kütle * ivme;
+                Console.WriteLine(kuvvet);
+            }
+            */
+
+            // Asal Sayı Hesaplama
+
+            /*
+            Console.WriteLine("Asal Sayıyı Giriniz: ");
+            int asal = Convert.ToInt32(Console.ReadLine());
+
+            bool asalMi = true;
+
+            for(int i = 2; i < asal; i++)
+            {
+                if(asal % i == 0)
+                {
+                    asalMi = false;
+                    break;
+                }                
+            }
+            if (asalMi && asal > 1)
+            {
+                Console.WriteLine("Asal");
+            }
+            else
+            {
+                Console.WriteLine("Asal Değil");
+            }
+            */
+
+            // Armstrong Sayılar
+
+            /*
+            Console.WriteLine("Armstrong Sayıyı Giriniz: ");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+
+            int temp1 = sayi;
+            int basamakSayisi = 0;
+
+            while (temp1>0)
+            {
+                basamakSayisi++;
+                temp1 = temp1 / 10;
+            }
+
+            int temp2 = sayi;
+            int toplam = 0;
+
+            while (temp2 > 0)
+            {
+                int basamak = temp2 % 10;
+                int kuvvet = 1;
+
+                for(int i = 1; i <= basamakSayisi; i++)
+                {
+                    kuvvet *= basamak;
+                }
+
+                toplam += kuvvet;
+                temp2 = temp2 / 10;
+            }
+
+            if(toplam == sayi)
+            {
+                Console.WriteLine("Girilen Sayı Armstrong Sayıdır");
+            }
+            else
+            {
+                Console.WriteLine("Girilen Sayı Armstrong Sayı Değildir");
+            }
+
+            */
+
+            // Fibonacci Serisi
+
+            /*
+            Console.WriteLine("Fibonacci Serisininde İstediğiniz Sırayı Yazınız: ");
+            int fibo = Convert.ToInt32(Console.ReadLine());
+
+            int ilkSayi = 1;
+            int İkinciSayi = 1;
+            int sonuc = 1;
+
+            if(fibo == 1 || fibo == 2)
+            {
+                sonuc = 1;
+            }
+            else
+            {
+                for(int i = 3; i <= fibo; i++)
+                {
+                    sonuc = ilkSayi + İkinciSayi;
+                    ilkSayi = İkinciSayi;
+                    İkinciSayi = sonuc;
+                }
+            }
+            Console.WriteLine(sonuc);
+            */
+
+            // EBOB
+
+            /*
+            Console.WriteLine("ilk sayı: ");
+            int s1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("İkinci sayı: ");
+            int s2 = Convert.ToInt32(Console.ReadLine());
+
+            int ebob = 1;
+
+            for(int i = 1; i <= Math.Min(s1, s2); i++)
+            {
+                if(s1%i==0 && s2%i==0)
+                {
+                    ebob = i;
+                }
+            }
+            Console.WriteLine(ebob);
+            */
+
+            // EKOK
+
+            /*
+            Console.WriteLine("İlk sayı: ");
+            int s1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("İkinci sayı: ");
+            int s2 = Convert.ToInt32(Console.ReadLine());
+
+            int ekok = Math.Max(s1, s2);
+
+            while (true)
+            {
+                if(ekok%s1==0 && ekok%s2==0)
+                {
+                    break;
+                }
+                ekok++;
+            }
+
+            Console.WriteLine(ekok);
+            */
+
+            // ATM Projesi
+
+            /*
+            int bakiye = 10000;
+            bool devamMi = true;
+
+            while(devamMi)
+            {
+                Console.WriteLine("NabiBank'a Hoşgeldiniz\nLütfen Yapmak İstediğiniz İşlemi Seçiniz:\n1:Para Yatırma\n2:Para Çekme" +
+                "\n3:Bakiye Sorgulama\n4:Çıkış");
+                int islem = Convert.ToInt32(Console.ReadLine());
+
+                if (islem < 1 || islem > 4)
+                {
+                    Console.WriteLine("Hatalı İşlem Girdiniz!\nLütfen Geçerli Bir İşlem Yapınız!");
+                    continue;
+
+                }
+                if (islem == 1)
+                {
+                    Console.WriteLine("Yatırmak İstediğiniz Miktarı Giriniz: ");
+                    int para_Yatir = Convert.ToInt32(Console.ReadLine());
+                    bakiye += para_Yatir;
+                }else if(islem == 2)
+                {
+                    Console.WriteLine("Çekmek İstediğiniz Para Miktarını Giriniz: ");
+                    int para_Cek = Convert.ToInt32(Console.ReadLine());
+
+                    if(bakiye<para_Cek)
+                    {
+                        Console.WriteLine("Yetersiz Bakiye!");
+                        continue;
+                    }
+                    bakiye -= para_Cek;
+                }else if(islem == 3)
+                {
+                    Console.WriteLine("Bakiyeniz: " + bakiye + "$");
+                }
+                else
+                {
+                    Console.WriteLine("Çıkış Yapıldı");
+                    break;
+                }
+            }          
+            */
+
         }
     }
 }

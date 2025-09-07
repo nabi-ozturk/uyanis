@@ -12,3 +12,4 @@ C:\Users\nabi\source\repos\uyanis\uyanis\obj\Debug\net8.0\refint\uyanis.dll
 C:\Users\nabi\source\repos\uyanis\uyanis\obj\Debug\net8.0\uyanis.pdb
 C:\Users\nabi\source\repos\uyanis\uyanis\obj\Debug\net8.0\uyanis.genruntimeconfig.cache
 C:\Users\nabi\source\repos\uyanis\uyanis\obj\Debug\net8.0\ref\uyanis.dll
+C:\Users\nabi\source\repos\uyanis\uyanis\obj\Debug\net8.0\uyanis.sourcelink.json

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("uyanis")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+172fda2bfa73493270306dde0a580bde04750053")]
 [assembly: System.Reflection.AssemblyProductAttribute("uyanis")]
 [assembly: System.Reflection.AssemblyTitleAttribute("uyanis")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
