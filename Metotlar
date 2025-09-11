@@ -1,0 +1,19 @@
+namespace uyanis
+{
+    internal class Palindrom
+    {
+        public static bool PalindromMu(int sayi)
+        {
+            int orijinal = sayi;
+            int ters = 0;
+
+            while (sayi > 0)
+            {
+                ters = ters * 10 + sayi % 10;
+                sayi /= 10;
+            }
+
+            return ters == orijinal;
+        }
+    }
+}

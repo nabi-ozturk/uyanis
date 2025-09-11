@@ -1,11 +1,12 @@
-﻿using System.Threading.Tasks.Dataflow;
-
-namespace uyanis
+﻿namespace uyanis
 {
     internal class Program
     {
+       
         static void Main(string[] args)
         {
+
+            // İLK KONULAR
 
             // KDV Tutarı Hesaplayan Program
 
@@ -216,6 +217,9 @@ namespace uyanis
             */
 
             // Burç Hesaplama
+
+            // ************************************************************************
+            // ************************************************************************
 
             /*
 
@@ -564,6 +568,115 @@ namespace uyanis
             }          
             */
 
+            // *********************************************************************
+            // *********************************************************************
+
+            // METHODLAR
+
+            // Palindrom Sayılar
+
+            /* Console.WriteLine("Palindrom Konrolü! Lütfen Bir Sayı Giriniz: ");
+            string sayi = Console.ReadLine();
+
+            if (PalindromMu(sayi))
+            {
+                Console.WriteLine("Evet, Palindrom Sayıdır!");
+            }
+            else
+            {
+                Console.WriteLine("Hayır, Palindrom Sayı Değildir!");
+            }    */
+
+            // Fibonacci Serisi
+            /*
+                Console.WriteLine("Fibonacci Serisinin n. terimini giriniz: ");
+                int n = Convert.ToInt32(Console.ReadLine());
+
+                int sonuc = Fibo(n);
+                Console.WriteLine(sonuc);
+            */
+
+            // Metotlar ile Hesap Makinesi
+
+            Console.WriteLine("Lütfen Yapmak İstediğiniz İşlemi Seçiniz:\n1: Toplama\n2: Çıkarma\n3: Çarpma\n4: Bölme");
+            int islem = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Lütfen ilk sayıyı giriniz: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Lütfen ikinci sayıyı giriniz: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+
+            switch (islem)
+            {
+                case 1:
+                    Console.WriteLine(Topla(a, b));
+                    break;
+                case 2:
+                    Console.WriteLine(Cikar(a, b));
+                    break;
+                case 3:
+                    Console.WriteLine(Carp(a, b));
+                    break;
+                case 4:
+                    Console.WriteLine(Böl(a, b));
+                    break;
+                default:
+                    Console.WriteLine("Geçersiz İşlem Girdiniz!");
+                    break;
+            }
+
+        } // Main
+
+        static int Topla(int a, int b)
+        {
+            return a + b;
         }
-    }
+        static int Cikar(int a, int b)
+        {
+            return a - b;
+        }
+        static int Carp(int a, int b)
+        {
+            return a * b;
+        }
+        static int Böl(int a, int b)
+        {
+            return a / b;
+        }
+
+
+        /* static int Fibo(int n)
+      {
+          if (n <= 1)
+          {
+              return n;
+
+
+          }
+          else
+          {
+              return Fibo(n - 1) + Fibo(n - 2);
+          }
+      } 
+
+      */
+        /* Palindrom Sayılar
+         * static bool PalindromMu(string sayi)
+        {
+            string ters = "";
+            for (int i =sayi.Length -1; i >= 0; i--)
+            {
+                ters += sayi[i];
+            }
+            return sayi == ters;
+
+
+
+        } */
+
+
+
+    } // Class
 }
+
