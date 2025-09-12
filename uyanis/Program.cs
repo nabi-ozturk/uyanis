@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-       
+
         static void Main(string[] args)
         {
 
@@ -598,6 +598,7 @@
 
             // Metotlar ile Hesap Makinesi
 
+            /*
             Console.WriteLine("Lütfen Yapmak İstediğiniz İşlemi Seçiniz:\n1: Toplama\n2: Çıkarma\n3: Çarpma\n4: Bölme");
             int islem = Convert.ToInt32(Console.ReadLine());
 
@@ -625,58 +626,67 @@
                     Console.WriteLine("Geçersiz İşlem Girdiniz!");
                     break;
             }
+            */
+            // } // Main
 
-        } // Main
+            /*
+                    static int Topla(int a, int b)
+                    {
+                        return a + b;
+                    }
+                    static int Cikar(int a, int b)
+                    {
+                        return a - b;
+                    }
+                    static int Carp(int a, int b)
+                    {
+                        return a * b;
+                    }
+                    static int Böl(int a, int b)
+                    {
+                        return a / b;
+                    }
 
-        static int Topla(int a, int b)
-        {
-            return a + b;
-        }
-        static int Cikar(int a, int b)
-        {
-            return a - b;
-        }
-        static int Carp(int a, int b)
-        {
-            return a * b;
-        }
-        static int Böl(int a, int b)
-        {
-            return a / b;
-        }
+                    */
 
-
-        /* static int Fibo(int n)
-      {
-          if (n <= 1)
+            /* static int Fibo(int n)
           {
-              return n;
+              if (n <= 1)
+              {
+                  return n;
 
 
-          }
-          else
-          {
-              return Fibo(n - 1) + Fibo(n - 2);
-          }
-      } 
+              }
+              else
+              {
+                  return Fibo(n - 1) + Fibo(n - 2);
+              }
+          } 
 
-      */
-        /* Palindrom Sayılar
-         * static bool PalindromMu(string sayi)
-        {
-            string ters = "";
-            for (int i =sayi.Length -1; i >= 0; i--)
+          */
+            /* Palindrom Sayılar
+             * static bool PalindromMu(string sayi)
             {
-                ters += sayi[i];
-            }
-            return sayi == ters;
+                string ters = "";
+                for (int i =sayi.Length -1; i >= 0; i--)
+                {
+                    ters += sayi[i];
+                }
+                return sayi == ters;
 
 
 
-        } */
+            } */
+
+
+            // ********************************************************************************
+            // ********************************************************************************
+
+            // OOP KISMI İÇİN YENİ REPO AÇIYORUM
 
 
 
+        } // New Main
     } // Class
 }
 
